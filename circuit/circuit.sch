@@ -15707,7 +15707,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
-<part name="J3" library="robo_ag" deviceset="STECKER_ISP_6" device=""/>
+<part name="JP" library="robo_ag" deviceset="STECKER_ISP_6" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="CM3" library="rcl" deviceset="C-EU" device="025-025X050" value="100nF"/>
@@ -15743,7 +15743,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="RL2I" library="rcl" deviceset="R-EU_" device="0207/10" value="150"/>
 <part name="RL2B" library="rcl" deviceset="R-EU_" device="0207/10" value="22"/>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
-<part name="J1" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="J303" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="P+17" library="supply1" deviceset="+5V" device=""/>
 <part name="RL3R" library="rcl" deviceset="R-EU_" device="0207/10" value="40,4"/>
 <part name="RL3G" library="rcl" deviceset="R-EU_" device="0207/10" value="22"/>
@@ -15925,7 +15925,7 @@ Pin-layout is the same.</text>
 <instance part="GND14" gate="1" x="335.28" y="208.28"/>
 <instance part="GND15" gate="1" x="353.06" y="208.28"/>
 <instance part="P+6" gate="1" x="353.06" y="243.84"/>
-<instance part="J3" gate="ISP" x="33.02" y="172.72"/>
+<instance part="JP" gate="ISP" x="33.02" y="172.72"/>
 <instance part="P+7" gate="1" x="111.76" y="165.1" rot="R90"/>
 <instance part="GND16" gate="1" x="93.98" y="167.64" rot="R270"/>
 <instance part="CM3" gate="G$1" x="101.6" y="167.64" rot="R90"/>
@@ -15968,7 +15968,7 @@ Pin-layout is the same.</text>
 <instance part="RL2I" gate="G$1" x="337.82" y="50.8"/>
 <instance part="RL2B" gate="G$1" x="337.82" y="63.5"/>
 <instance part="P+15" gate="1" x="363.22" y="86.36"/>
-<instance part="J1" gate="A" x="353.06" y="50.8"/>
+<instance part="J303" gate="A" x="353.06" y="50.8"/>
 <instance part="P+17" gate="1" x="363.22" y="58.42"/>
 <instance part="RL3R" gate="G$1" x="337.82" y="119.38"/>
 <instance part="RL3G" gate="G$1" x="337.82" y="109.22"/>
@@ -16133,10 +16133,10 @@ Pin-layout is the same.</text>
 <junction x="363.22" y="68.58"/>
 </segment>
 <segment>
-<pinref part="J1" gate="A" pin="3"/>
+<pinref part="J303" gate="A" pin="3"/>
 <wire x1="350.52" y1="48.26" x2="363.22" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="363.22" y1="53.34" x2="363.22" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="J1" gate="A" pin="1"/>
+<pinref part="J303" gate="A" pin="1"/>
 <wire x1="350.52" y1="53.34" x2="363.22" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="P+17" gate="1" pin="+5V"/>
 <wire x1="363.22" y1="55.88" x2="363.22" y2="53.34" width="0.1524" layer="91"/>
@@ -16163,7 +16163,7 @@ Pin-layout is the same.</text>
 <pinref part="JP5" gate="A" pin="5"/>
 </segment>
 <segment>
-<pinref part="J3" gate="ISP" pin="2_VCC"/>
+<pinref part="JP" gate="ISP" pin="2_VCC"/>
 <pinref part="P+20" gate="1" pin="+5V"/>
 <wire x1="43.18" y1="175.26" x2="43.18" y2="180.34" width="0.1524" layer="91"/>
 </segment>
@@ -16374,7 +16374,7 @@ Pin-layout is the same.</text>
 <pinref part="JP5" gate="A" pin="6"/>
 </segment>
 <segment>
-<pinref part="J3" gate="ISP" pin="6_GND"/>
+<pinref part="JP" gate="ISP" pin="6_GND"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="43.18" y1="170.18" x2="43.18" y2="165.1" width="0.1524" layer="91"/>
 </segment>
@@ -16613,7 +16613,7 @@ Pin-layout is the same.</text>
 <wire x1="116.84" y1="180.34" x2="111.76" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="ISP" pin="5_RST"/>
+<pinref part="JP" gate="ISP" pin="5_RST"/>
 <wire x1="22.86" y1="170.18" x2="20.32" y2="170.18" width="0.1524" layer="91"/>
 <label x="19.05" y="171.45" size="1.778" layer="91" rot="R180"/>
 </segment>
@@ -16829,7 +16829,7 @@ Pin-layout is the same.</text>
 <label x="168.91" y="118.11" size="1.778" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="ISP" pin="1_MISO"/>
+<pinref part="JP" gate="ISP" pin="1_MISO"/>
 <wire x1="22.86" y1="175.26" x2="20.32" y2="175.26" width="0.1524" layer="91"/>
 <label x="19.05" y="176.53" size="1.778" layer="91" rot="R180"/>
 </segment>
@@ -16841,7 +16841,7 @@ Pin-layout is the same.</text>
 <label x="168.91" y="115.57" size="1.778" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="ISP" pin="3_SCK"/>
+<pinref part="JP" gate="ISP" pin="3_SCK"/>
 <wire x1="22.86" y1="172.72" x2="20.32" y2="172.72" width="0.1524" layer="91"/>
 <label x="19.05" y="173.99" size="1.778" layer="91" rot="R180"/>
 </segment>
@@ -17093,7 +17093,7 @@ Pin-layout is the same.</text>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="J1" gate="A" pin="2"/>
+<pinref part="J303" gate="A" pin="2"/>
 <wire x1="350.52" y1="50.8" x2="342.9" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="RL2I" gate="G$1" pin="2"/>
 </segment>
@@ -17121,7 +17121,7 @@ Pin-layout is the same.</text>
 </net>
 <net name="PROG_MOSI_1" class="0">
 <segment>
-<pinref part="J3" gate="ISP" pin="4_MOSI"/>
+<pinref part="JP" gate="ISP" pin="4_MOSI"/>
 <wire x1="43.18" y1="172.72" x2="45.72" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="RP" gate="G$1" pin="1"/>
 </segment>
