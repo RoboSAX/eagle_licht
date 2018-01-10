@@ -15908,6 +15908,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="P+28" library="supply1" deviceset="+5V" device=""/>
 <part name="P+29" library="supply1" deviceset="+5V" device=""/>
 <part name="JT" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="JD4" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15955,6 +15956,10 @@ depend on ICD!
 
 SN75176: RD3=  ;  RD4=
 ADM485: RD3=  ;  RD4=</text>
+<text x="231.14" y="78.74" size="1.778" layer="94">Note: Possible extended Bus-Detection
+through ADC-Pin 0. E.g. Idle-Detection.
+Only if in single-light-mode (not 2 lights).
+==&gt; Therefore using a jumper</text>
 </plain>
 <instances>
 <instance part="P+1" gate="1" x="40.64" y="243.84"/>
@@ -16007,13 +16012,13 @@ ADM485: RD3=  ;  RD4=</text>
 <instance part="CQ1" gate="G$1" x="101.6" y="152.4" rot="MR270"/>
 <instance part="CQ2" gate="G$1" x="101.6" y="157.48" rot="R90"/>
 <instance part="ICL1" gate="A" x="241.3" y="165.1"/>
-<instance part="DD1" gate="G$1" x="223.52" y="66.04" smashed="yes">
-<attribute name="NAME" x="220.98" y="67.7926" size="1.778" layer="95"/>
-<attribute name="VALUE" x="220.98" y="62.4586" size="1.778" layer="96"/>
+<instance part="DD1" gate="G$1" x="223.52" y="60.96" smashed="yes">
+<attribute name="NAME" x="220.98" y="62.7126" size="1.778" layer="95"/>
+<attribute name="VALUE" x="220.98" y="57.3786" size="1.778" layer="96"/>
 </instance>
-<instance part="DD2" gate="G$1" x="223.52" y="55.88" smashed="yes">
-<attribute name="NAME" x="220.98" y="57.6326" size="1.778" layer="95"/>
-<attribute name="VALUE" x="220.98" y="52.2986" size="1.778" layer="96"/>
+<instance part="DD2" gate="G$1" x="223.52" y="50.8" smashed="yes">
+<attribute name="NAME" x="220.98" y="52.5526" size="1.778" layer="95"/>
+<attribute name="VALUE" x="220.98" y="47.2186" size="1.778" layer="96"/>
 </instance>
 <instance part="B1" gate="1" x="170.18" y="218.44"/>
 <instance part="J302" gate="G$1" x="187.96" y="215.9"/>
@@ -16134,11 +16139,11 @@ ADM485: RD3=  ;  RD4=</text>
 <instance part="GND38" gate="1" x="20.32" y="10.16" rot="MR0"/>
 <instance part="LD1" gate="LED" x="20.32" y="66.04" rot="MR0"/>
 <instance part="RLD1" gate="G$1" x="20.32" y="53.34" rot="MR270"/>
-<instance part="RD1" gate="G$1" x="238.76" y="60.96"/>
-<instance part="CD1" gate="G$1" x="254" y="55.88"/>
-<instance part="GND39" gate="1" x="246.38" y="43.18"/>
-<instance part="RD2" gate="G$1" x="246.38" y="53.34" rot="R90"/>
-<instance part="GND40" gate="1" x="254" y="43.18"/>
+<instance part="RD1" gate="G$1" x="238.76" y="55.88"/>
+<instance part="CD1" gate="G$1" x="254" y="50.8"/>
+<instance part="GND39" gate="1" x="246.38" y="38.1"/>
+<instance part="RD2" gate="G$1" x="246.38" y="48.26" rot="R90"/>
+<instance part="GND40" gate="1" x="254" y="38.1"/>
 <instance part="RD3" gate="G$1" x="238.76" y="27.94"/>
 <instance part="CD2" gate="G$1" x="254" y="22.86"/>
 <instance part="GND41" gate="1" x="246.38" y="10.16"/>
@@ -16147,6 +16152,7 @@ ADM485: RD3=  ;  RD4=</text>
 <instance part="P+28" gate="1" x="218.44" y="27.94" rot="R90"/>
 <instance part="P+29" gate="1" x="20.32" y="73.66" rot="MR0"/>
 <instance part="JT" gate="A" x="53.34" y="121.92" rot="R180"/>
+<instance part="JD4" gate="G$1" x="248.92" y="68.58" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -16580,12 +16586,12 @@ ADM485: RD3=  ;  RD4=</text>
 <segment>
 <pinref part="GND39" gate="1" pin="GND"/>
 <pinref part="RD2" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="48.26" x2="246.38" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="43.18" x2="246.38" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CD1" gate="G$1" pin="2"/>
 <pinref part="GND40" gate="1" pin="GND"/>
-<wire x1="254" y1="50.8" x2="254" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="254" y1="45.72" x2="254" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND41" gate="1" pin="GND"/>
@@ -16894,15 +16900,20 @@ ADM485: RD3=  ;  RD4=</text>
 <segment>
 <pinref part="RD1" gate="G$1" pin="2"/>
 <pinref part="CD1" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="60.96" x2="246.38" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="55.88" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="RD2" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="58.42" x2="246.38" y2="60.96" width="0.1524" layer="91"/>
-<junction x="246.38" y="60.96"/>
-<wire x1="254" y1="58.42" x2="254" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="254" y1="60.96" x2="246.38" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="254" y1="60.96" x2="256.54" y2="60.96" width="0.1524" layer="91"/>
-<junction x="254" y="60.96"/>
-<label x="257.81" y="59.69" size="1.778" layer="91"/>
+<wire x1="246.38" y1="53.34" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
+<junction x="246.38" y="55.88"/>
+<wire x1="254" y1="53.34" x2="254" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="254" y1="55.88" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="254" y1="55.88" x2="256.54" y2="55.88" width="0.1524" layer="91"/>
+<junction x="254" y="55.88"/>
+<label x="257.81" y="54.61" size="1.778" layer="91"/>
+</segment>
+<segment>
+<pinref part="JD4" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="71.12" x2="241.3" y2="71.12" width="0.1524" layer="91"/>
+<label x="240.03" y="72.39" size="1.778" layer="91" rot="R180"/>
 </segment>
 </net>
 <net name="BUS_DETECT2" class="0">
@@ -17054,6 +17065,11 @@ ADM485: RD3=  ;  RD4=</text>
 <wire x1="40.64" y1="119.38" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
 <label x="31.75" y="120.65" size="1.778" layer="91" rot="R180"/>
 <pinref part="JP6" gate="A" pin="4"/>
+</segment>
+<segment>
+<pinref part="JD4" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="71.12" x2="259.08" y2="71.12" width="0.1524" layer="91"/>
+<label x="260.35" y="69.85" size="1.778" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -17302,8 +17318,8 @@ ADM485: RD3=  ;  RD4=</text>
 <label x="118.11" y="54.61" size="1.778" layer="91" rot="R180"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="66.04" x2="218.44" y2="66.04" width="0.1524" layer="91"/>
-<label x="217.17" y="67.31" size="1.778" layer="91" rot="R180"/>
+<wire x1="220.98" y1="60.96" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
+<label x="217.17" y="62.23" size="1.778" layer="91" rot="R180"/>
 <pinref part="DD1" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -17333,8 +17349,8 @@ ADM485: RD3=  ;  RD4=</text>
 <label x="118.11" y="36.83" size="1.778" layer="91" rot="R180"/>
 </segment>
 <segment>
-<wire x1="218.44" y1="55.88" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
-<label x="217.17" y="57.15" size="1.778" layer="91" rot="R180"/>
+<wire x1="218.44" y1="50.8" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
+<label x="217.17" y="52.07" size="1.778" layer="91" rot="R180"/>
 <pinref part="DD2" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -17372,13 +17388,13 @@ ADM485: RD3=  ;  RD4=</text>
 <net name="N$36" class="0">
 <segment>
 <pinref part="DD1" gate="G$1" pin="C"/>
-<wire x1="226.06" y1="66.04" x2="231.14" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="66.04" x2="231.14" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="DD2" gate="G$1" pin="C"/>
+<wire x1="226.06" y1="60.96" x2="231.14" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="60.96" x2="231.14" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="55.88" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="60.96" x2="233.68" y2="60.96" width="0.1524" layer="91"/>
-<junction x="231.14" y="60.96"/>
+<pinref part="DD2" gate="G$1" pin="C"/>
+<wire x1="231.14" y1="55.88" x2="231.14" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="50.8" x2="226.06" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="55.88" x2="233.68" y2="55.88" width="0.1524" layer="91"/>
+<junction x="231.14" y="55.88"/>
 <pinref part="RD1" gate="G$1" pin="1"/>
 </segment>
 </net>
