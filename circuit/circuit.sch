@@ -258,10 +258,10 @@ Autor: Peter Weissig&lt;p&gt;</description>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="21"/>
 </package>
 <package name="LED_TOP_PLCC6">
-<smd name="6" x="-2.65" y="2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<smd name="4" x="2.65" y="2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<smd name="3" x="2.65" y="-2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<smd name="1" x="-2.65" y="-2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
+<smd name="6" x="-2.65" y="2.7" dx="4" dy="4" layer="1"/>
+<smd name="4" x="2.65" y="2.7" dx="4" dy="4" layer="1"/>
+<smd name="3" x="2.65" y="-2.7" dx="4" dy="4" layer="1"/>
+<smd name="1" x="-2.65" y="-2.7" dx="4" dy="4" layer="1"/>
 <text x="-2.54" y="0" size="1.27" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="2.54" y="0" size="1.27" layer="27" rot="R90" align="top-center">&gt;VALUE</text>
 <wire x1="-1.65" y1="1.5" x2="-1.4" y2="1.5" width="0.2032" layer="21"/>
@@ -501,10 +501,10 @@ OSRAM_LA_E67F&lt;br&gt;</description>
 <rectangle x1="0.4" y1="-1.8" x2="1.1" y2="-0.8" layer="31"/>
 <rectangle x1="0.4" y1="0.8" x2="1.1" y2="1.8" layer="31"/>
 <rectangle x1="-1.1" y1="0.8" x2="-0.4" y2="1.8" layer="31"/>
-<smd name="1" x="-2.35" y="2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<smd name="2" x="2.35" y="2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<smd name="3" x="2.35" y="-2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<smd name="4" x="-2.35" y="-2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
+<smd name="1" x="-2.35" y="2.7" dx="4" dy="4" layer="1"/>
+<smd name="2" x="2.35" y="2.7" dx="4" dy="4" layer="1"/>
+<smd name="3" x="2.35" y="-2.7" dx="4" dy="4" layer="1"/>
+<smd name="4" x="-2.35" y="-2.7" dx="4" dy="4" layer="1"/>
 <text x="-2.54" y="0" size="1.27" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="2.54" y="0" size="1.27" layer="27" rot="R270" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.4" y1="1.6" x2="-1.1" y2="1.6" width="0.2032" layer="21"/>
@@ -543,10 +543,10 @@ OSRAM_LA_E67F&lt;br&gt;</description>
 <package name="LED_TOP_PLCC4">
 <description>&lt;b&gt;TOPLED&lt;/b&gt;&lt;br&gt;
 OSRAM_LA_E67B&lt;br&gt;</description>
-<smd name="4" x="-2.35" y="2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<smd name="3" x="2.35" y="2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<smd name="2" x="2.35" y="-2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<smd name="1" x="-2.35" y="-2.7" dx="4" dy="4" layer="1" stop="no" cream="no"/>
+<smd name="4" x="-2.35" y="2.7" dx="4" dy="4" layer="1"/>
+<smd name="3" x="2.35" y="2.7" dx="4" dy="4" layer="1"/>
+<smd name="2" x="2.35" y="-2.7" dx="4" dy="4" layer="1"/>
+<smd name="1" x="-2.35" y="-2.7" dx="4" dy="4" layer="1"/>
 <text x="-2.54" y="0" size="1.27" layer="25" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="2.54" y="0" size="1.27" layer="27" rot="R270" align="bottom-center">&gt;VALUE</text>
 <rectangle x1="-1.15" y1="0.75" x2="-0.35" y2="1.85" layer="29"/>
