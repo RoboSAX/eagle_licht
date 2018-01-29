@@ -15841,8 +15841,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="LS" library="robo_ag" deviceset="LED" device="-3MM"/>
-<part name="RLS" library="rcl" deviceset="R-EU_" device="0207/10" value="300"/>
+<part name="LS" library="robo_ag" deviceset="LED" device="-3MM" value="red"/>
+<part name="RLS" library="rcl" deviceset="R-EU_" device="0207/10" value="2k"/>
 <part name="RL1R" library="rcl" deviceset="R-EU_" device="0207/10" value="40,4"/>
 <part name="RL1G" library="rcl" deviceset="R-EU_" device="0207/10" value="22"/>
 <part name="RL1I" library="rcl" deviceset="R-EU_" device="0207/10" value="150"/>
@@ -15890,11 +15890,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
-<part name="LD2" library="robo_ag" deviceset="LED" device="-3MM"/>
-<part name="RLD2" library="rcl" deviceset="R-EU_" device="0207/10" value="300"/>
+<part name="LD2" library="robo_ag" deviceset="LED" device="-3MM" value="red"/>
+<part name="RLD2" library="rcl" deviceset="R-EU_" device="0207/10" value="2k"/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
-<part name="LD1" library="robo_ag" deviceset="LED" device="-3MM"/>
-<part name="RLD1" library="rcl" deviceset="R-EU_" device="0207/10" value="300"/>
+<part name="LD1" library="robo_ag" deviceset="LED" device="-3MM" value="green"/>
+<part name="RLD1" library="rcl" deviceset="R-EU_" device="0207/10" value="2k"/>
 <part name="RD1" library="rcl" deviceset="R-EU_" device="0207/10" value="150"/>
 <part name="CD1" library="rcl" deviceset="C-EU" device="025-025X050" value="100pF"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
@@ -16072,7 +16072,7 @@ Only if in single-light-mode (not 2 lights).
 <instance part="GND22" gate="1" x="93.98" y="124.46"/>
 <instance part="P+11" gate="1" x="132.08" y="243.84"/>
 <instance part="GND23" gate="1" x="132.08" y="208.28"/>
-<instance part="LS" gate="LED" x="132.08" y="233.68"/>
+<instance part="LS" gate="LED" x="132.08" y="233.68" rot="MR0"/>
 <instance part="RLS" gate="G$1" x="132.08" y="220.98" rot="R90"/>
 <instance part="RL1R" gate="G$1" x="337.82" y="170.18"/>
 <instance part="RL1G" gate="G$1" x="337.82" y="162.56"/>
