@@ -2531,7 +2531,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="87.63" y="58.1406" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="J202" library="robo_ag" package="STECKER_WANNE_10" value="" x="94.615" y="20.32" rot="R90"/>
-<element name="LD2" library="robo_ag" package="LED_3MM" value="red" x="80.01" y="5.715" smashed="yes" rot="R270">
+<element name="LD2" library="robo_ag" package="LED_3MM" value="green" x="80.01" y="5.715" smashed="yes" rot="R270">
 <attribute name="NAME" x="78.4225" y="1.9685" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="78.359" y="3.81" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
@@ -2539,7 +2539,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="80.7085" y="12.192" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="79.375" y="16.8656" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="LD1" library="robo_ag" package="LED_3MM" value="green" x="85.09" y="5.715" smashed="yes" rot="R90">
+<element name="LD1" library="robo_ag" package="LED_3MM" value="red" x="85.09" y="5.715" smashed="yes" rot="R90">
 <attribute name="NAME" x="83.82" y="1.9685" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="86.741" y="7.62" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>

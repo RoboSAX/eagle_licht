@@ -15890,10 +15890,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
-<part name="LD2" library="robo_ag" deviceset="LED" device="-3MM" value="red"/>
+<part name="LD2" library="robo_ag" deviceset="LED" device="-3MM" value="green"/>
 <part name="RLD2" library="rcl" deviceset="R-EU_" device="0207/10" value="2k"/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
-<part name="LD1" library="robo_ag" deviceset="LED" device="-3MM" value="green"/>
+<part name="LD1" library="robo_ag" deviceset="LED" device="-3MM" value="red"/>
 <part name="RLD1" library="rcl" deviceset="R-EU_" device="0207/10" value="2k"/>
 <part name="RD1" library="rcl" deviceset="R-EU_" device="0207/10" value="150"/>
 <part name="CD1" library="rcl" deviceset="C-EU" device="025-025X050" value="100pF"/>
